@@ -12,6 +12,20 @@
         <h2>About</h2>
         <p>My name is Yousuf. I am learning web development and improving my English. My goal is to become a top business man.</p>
     </section>
+    <p id="extra" style="display:none;">
+  I am learning JavaScript.
+</p>
+
+<button id="showBtn">Show More</button>
+
+<script>
+const button = document.querySelector("#showBtn");
+const text = document.querySelector("#extra");
+
+button.addEventListener("click", function() {
+  text.style.display = "block";
+});
+</script>
 
     <section>
         <h2>Skills</h2>
