@@ -1,69 +1,29 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Yousuf Personal Website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
 <body>
 
     <h1>Yousuf's Personal Website</h1>
 
     <section>
         <h2>About</h2>
-        <p>My name is Yousuf. I am learning web development and improving my English. My goal is to become a top business man.</p>
+        <p>My name is Yousuf. I am learning web development and improving my English. My goal is to become a top businessman.</p>
     </section>
+
     <p id="extra" style="display:none;">
-  I am learning JavaScript.
-</p>
-    <p id="extra" style="display:none;">
-I am learning JavaScript.
-</p>
+        I am learning JavaScript.
+    </p>
 
-<button id="showBtn">Show More</button>
+    <button id="showBtn">Show More</button>
 
-<hr>
+    <hr>
 
-<h2>Tip Calculator</h2>
+    <h2>Tip Calculator</h2>
 
-<input type="number" id="bill" placeholder="Bill Amount">
+    <input type="number" id="bill" placeholder="Bill Amount">
 
-<input type="number" id="tip" placeholder="Tip %">
+    <input type="number" id="tip" placeholder="Tip %">
 
-<button onclick="calculateTip()">Calculate</button>
+    <button onclick="calculateTip()">Calculate</button>
 
-<p id="result"></p>
-
-<script>
-    <p id="extra" style="display:none;">
-I am learning JavaScript.
-</p>
-
-<button id="showBtn">Show More</button>
-
-<hr>
-
-<h2>Tip Calculator</h2>
-
-<input type="number" id="bill" placeholder="Bill Amount">
-
-<input type="number" id="tip" placeholder="Tip %">
-
-<button onclick="calculateTip()">Calculate</button>
-
-<p id="result"></p>
-
-<script>
-
-<button id="showBtn">Show More</button>
-
-<script>
-const button = document.querySelector("#showBtn");
-const text = document.querySelector("#extra");
-
-button.addEventListener("click", function() {
-  text.style.display = "block";
-});
-</script>
+    <p id="result"></p>
 
     <section>
         <h2>Skills</h2>
@@ -84,9 +44,26 @@ button.addEventListener("click", function() {
     <section>
         <h2>Contact</h2>
         <p>Email: kayousuf2004@gmail.com</p>
-        <a href= "https://github.com/yousukka">My Github</a>
-        <p> My name is yousuf .iam  Btech Cyber Security Student Learning Web development and also improving my english language</p>
+        <a href="https://github.com/yousukka">My GitHub</a>
     </section>
 
+    <script>
+        const button = document.querySelector("#showBtn");
+        const text = document.querySelector("#extra");
+
+        button.addEventListener("click", function() {
+            text.style.display = "block";
+        });
+
+        function calculateTip() {
+            let bill = document.getElementById("bill").value;
+            let tip = document.getElementById("tip").value;
+
+            let totalTip = (bill * tip) / 100;
+
+            document.getElementById("result").innerText =
+                "Tip Amount: ₹" + totalTip;
+        }
+    </script>
+
 </body>
-</html>
