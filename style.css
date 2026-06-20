@@ -7,13 +7,15 @@ body {
 }
 
 h1, h2 {
-  color: re6;
+  color: red;
 }
 
 section {
   border: 1px solid #ddd;
   padding: 17px;
   margin-bottom: 17px;
+  background-color:dark blue;
+  border-radius:10px;
 }
 
 @media (max-width: 768px) {
