@@ -4,7 +4,7 @@ body {
   margin: auto;
   padding: 20px;
   line-height: 1.6;
-   background-color: light blue;
+   background-color: white;
 }
 
 h1, h2 {
@@ -15,7 +15,7 @@ section {
   border: 1px solid #ddd;
   padding: 17px;
   margin-bottom: 17px;
-  background-color: Red;
+  background-color: black;
   border-radius:10px;
 }
 
