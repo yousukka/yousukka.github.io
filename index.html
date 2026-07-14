@@ -75,23 +75,29 @@
     </section>
 
     <script>
-        const button = document.querySelector("#showBtn");
-        const text = document.querySelector("#extra");
+    const button = document.querySelector("#showBtn");
+    const text = document.querySelector("#extra");
 
-        button.addEventListener("click", function() {
+    button.addEventListener("click", function() {
+        if (text.style.display === "none" || text.style.display === "") {
             text.style.display = "block";
-        });
-
-        function calculateTip() {
-            let bill = document.getElementById("bill").value;
-            let tip = document.getElementById("tip").value;
-
-            let totalTip = (bill * tip) / 100;
-
-            document.getElementById("result").innerText =
-                "Tip Amount: ₹" + totalTip;
+            button.innerText = "Show Less";
+        } else {
+            text.style.display = "none";
+            button.innerText = "Show More";
         }
-    </script>
+    });
+
+    function calculateTip() {
+        let bill = document.getElementById("bill").value;
+        let tip = document.getElementById("tip").value;
+
+        let totalTip = (bill * tip) / 100;
+
+        document.getElementById("result").innerText =
+            "Tip Amount: ₹" + totalTip;
+    }
+</script>
 
 </body>
 </html>
