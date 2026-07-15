@@ -4,19 +4,25 @@ body {
   margin: auto;
   padding: 20px;
   line-height: 1.6;
-   background-color: white;
+  background-color: #f4f7fc;
+  color: #333;
+   
 }
 
 h1, h2 {
-  color: blue;
+  color: #2563eb;
+}
+h1 {
+  font-size: 40px;
 }
 
 section {
-  border: 1px solid #ddd;
+  border: none;
   padding: 17px;
   margin-bottom: 17px;
   background-color: white;
   border-radius:10px;
+   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 @media (max-width: 768px) {
@@ -42,4 +48,23 @@ button {
 #result {
     font-weight: bold;
     margin-top: 10px;
+}
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #1d4ed8;
 }
