@@ -68,3 +68,14 @@ button {
 button:hover {
   background-color: #1d4ed8;
 }
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+h1, p {
+  text-align: center;
+}
