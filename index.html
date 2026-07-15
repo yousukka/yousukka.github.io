@@ -6,191 +6,202 @@
 </head>
 <body>
 
-    <h1>Yousuf's Personal Website</h1>
+<h1>Yousuf's Personal Website</h1>
 
-    <img src="profile.jpg" alt="K A Yousuf Ali" class="profile-pic">
+<img src="profile.jpg" alt="Yousuf Ali" class="profile-pic">
 
-    <section>
-        <h2>About Me</h2>
+<section>
+    <h2>About Me</h2>
+    <p>
+        My name is K A Yousuf Ali. I completed a Bachelor of Engineering in Cyber Security.
+        I am currently learning web development using HTML, CSS, JavaScript, Git and GitHub.
+    </p>
+</section>
+
+<section>
+    <h2>Education</h2>
+
+    <p>
+        Bachelor of Engineering in Cyber Security<br>
+        Ilahia College of Engineering and Technology<br>
+        KTU University
+    </p>
+</section>
+
+<section>
+    <h2>Skills</h2>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Git</li>
+        <li>GitHub</li>
+        <li>API Integration</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Projects</h2>
+
+    <div class="project">
+
+        <h3>Personal Website</h3>
 
         <p>
-            My name is K A Yousuf Ali. I completed a Bachelor of Engineering in Cyber Security from Ilahia College of Engineering and Technology. I am currently learning web development and building projects using HTML, CSS, JavaScript, Git, GitHub, and API integration.
+            A personal portfolio website built using HTML, CSS and JavaScript.
         </p>
-    </section>
 
-    <section>
-        <h2>Education</h2>
-
-        <p>
-            Bachelor of Engineering in Cyber Security<br>
-            Ilahia College of Engineering and Technology<br>
-            KTU University
-        </p>
-    </section>
-
-    <section>
-        <h2>Skills</h2>
-
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>API Integration</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Projects</h2>
-
-        <div class="project">
-            <h3>Personal Website</h3>
-
-            <p>
-                A personal portfolio website built using HTML, CSS and JavaScript to showcase my skills, projects and contact information.
-            </p>
-
-            <p>
-                <strong>Technologies:</strong> HTML, CSS, JavaScript
-            </p>
-
-            <a href="https://github.com/yousukka" target="_blank">
-                View GitHub Profile
-            </a>
-        </div>
-
-        <div class="project">
-            <h3>AI Notes App</h3>
-
-            <img src="notes-app-screenshot.png" alt="AI Notes App Screenshot" class="project-image">
-
-            <p>
-                AI Notes App is a web application that allows users to create, save and delete notes. It includes an AI-powered summary feature that generates a short summary of note content. The application is connected to a backend API and deployed online.
-            </p>
-
-            <p>
-                <strong>Technologies:</strong> HTML, CSS, JavaScript, API, Render
-            </p>
-
-            <p>
-                <a href="https://notes-api-1-a0ji.onrender.com" target="_blank">
-                    Live Demo
-                </a>
-            </p>
-
-            <p>
-                <a href="https://github.com/yousukka/notes-api" target="_blank">
-                    GitHub Repository
-                </a>
-            </p>
-        </div>
-    </section>
-
-    <div id="extra" style="display:none;">
-
-        <section>
-            <h2>Resume</h2>
-
-            <a href="resume.pdf" target="_blank">
-                <button>Download Resume</button>
-            </a>
-        </section>
-
-        <section>
-            <h2>Certifications & Internships</h2>
-
-            <p>
-                <strong>TalentGroove Web Development Internship</strong><br>
-                Learned HTML, CSS, JavaScript, Git, GitHub, API integration, debugging and website deployment.
-            </p>
-
-            <ul>
-                <li>IBM AI & Cloud Internship</li>
-                <li>Tata Forage Cybersecurity Analyst Job Simulation</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Additional Project</h2>
-
-            <h3>Phishing Email Detection System</h3>
-
-            <p>
-                A cybersecurity project that analyzes email content and identifies potential phishing emails using predefined indicators. The system classifies emails as High Risk, Medium Risk, or Low Risk based on suspicious keywords and patterns.
-            </p>
-        </section>
+        <a href="https://github.com/yousukka" target="_blank">
+            View GitHub Profile
+        </a>
 
     </div>
 
-    <button id="showBtn">Show More</button>
+    <div class="project">
 
+        <h3>AI Notes App</h3>
+
+        <img src="notes-app-screenshot.png"
+             alt="AI Notes App Screenshot"
+             class="project-image">
+
+        <p>
+            AI Notes App allows users to create, save and delete notes.
+            It includes an AI summary feature connected to a backend API.
+        </p>
+
+        <a href="https://notes-api-1-a0ji.onrender.com" target="_blank">
+            Live Demo
+        </a>
+
+        <br><br>
+
+        <a href="https://github.com/yousukka/notes-api" target="_blank">
+            GitHub Repository
+        </a>
+
+    </div>
+
+</section>
+
+<div id="extra" style="display:none;">
+
+<section>
+
+    <h2>Resume</h2>
+
+    <a href="resume.pdf" target="_blank">
+        <button>Download Resume</button>
+    </a>
+
+</section>
+
+<section>
+
+    <h2>Certifications</h2>
+
+    <ul>
+        <li>TalentGroove Web Development Internship</li>
+        <li>IBM AI & Cloud Internship</li>
+        <li>Tata Forage Cybersecurity Analyst Job Simulation</li>
+    </ul>
+
+</section>
+
+<section>
+
+    <h2>Phishing Email Detection System</h2>
+
+    <p>
+        Detects phishing emails and classifies them as
+        High Risk, Medium Risk and Low Risk.
+    </p>
+
+</section>
+
+</div>
+
+<button id="showBtn">Show More</button>
+
+<section>
+
+    <h2>Tip Calculator</h2>
+
+    <input type="number" id="bill" placeholder="Bill Amount">
+
+    <input type="number" id="tip" placeholder="Tip %">
+
+    <button onclick="calculateTip()">Calculate</button>
+
+    <p id="result"></p>
+
+</section>
+
+<section>
+
+    <h2>Contact</h2>
+
+    <p>
+        Email:
+        <a href="mailto:kayousuf2004@gmail.com">
+            kayousuf2004@gmail.com
+        </a>
+    </p>
+
+    <p>
+        <a href="https://github.com/yousukka" target="_blank">
+            GitHub Profile
+        </a>
+    </p>
+
+    <p>
+        <a href="https://www.linkedin.com/in/k-a-yousuf-ali-a9a8612b3/" target="_blank">
+            LinkedIn Profile
+        </a>
+    </p>
+
+</section>
+
+<footer>
     <hr>
+    <p>© 2026 K A Yousuf Ali</p>
+</footer>
 
-    <section>
-        <h2>Tip Calculator</h2>
+<script>
 
-        <input type="number" id="bill" placeholder="Bill Amount">
+const button = document.getElementById("showBtn");
+const extra = document.getElementById("extra");
 
-        <input type="number" id="tip" placeholder="Tip %" min="0" max="200">
+button.addEventListener("click", function () {
 
-        <button onclick="calculateTip()">Calculate</button>
+    if (extra.style.display === "none") {
 
-        <p id="result"></p>
-    </section>
+        extra.style.display = "block";
+        button.innerText = "Show Less";
 
-    <section>
-        <h2>Contact</h2>
+    } else {
 
-        <p>
-            Email:
-            <a href="mailto:kayousuf2004@gmail.com">
-                kayousuf2004@gmail.com
-            </a>
-        </p>
+        extra.style.display = "none";
+        button.innerText = "Show More";
 
-        <p>
-            <a href="https://github.com/yousukka" target="_blank">
-                GitHub Profile
-            </a>
-        </p>
+    }
 
-        <p>
-            <a href="https://www.linkedin.com/in/k-a-yousuf-ali-a9a8612b3/" target="_blank">
-                LinkedIn Profile
-            </a>
-        </p>
-    </section>
+});
 
-    <footer>
-        <hr>
-        <p>© 2026 K A Yousuf Ali | Personal Portfolio</p>
-    </footer>
+function calculateTip() {
 
-    <script>
-        const button = document.querySelector("#showBtn");
-        const text = document.querySelector("#extra");
+    let bill = document.getElementById("bill").value;
+    let tip = document.getElementById("tip").value;
 
-        button.addEventListener("click", function () {
-            if (text.style.display === "none" || text.style.display === "") {
-                text.style.display = "block";
-                button.innerText = "Show Less";
-            } else {
-                text.style.display = "none";
-                button.innerText = "Show More";
-            }
-        });
+    let totalTip = (bill * tip) / 100;
 
-        function calculateTip() {
-            let bill = document.getElementById("bill").value;
-            let tip = document.getElementById("tip").value;
+    document.getElementById("result").innerText =
+        "Tip Amount: ₹" + totalTip;
 
-            let totalTip = (bill * tip) / 100;
+}
 
-            document.getElementById("result").innerText =
-                "Tip Amount: ₹" + totalTip;
-        }
-    </script>
+</script>
 
 </body>
 </html>
